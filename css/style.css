@@ -21,3 +21,14 @@ body {
   height: 100vh;
   display: flex;
 }
+
+body > div {
+  height: 100%;
+  flex: 2;
+}
+
+.left {
+  background-image: url('../assets/img/green-leaf.jpg');
+  background-size: cover;
+  flex: 1;
+}
