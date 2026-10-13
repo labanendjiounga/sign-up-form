@@ -137,8 +137,7 @@ button {
 }
 
 .main,
-button:active,
-input:focus {
+button:active {
   box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
 }
 
@@ -162,4 +161,5 @@ input[type="password"]:user-invalid {
 input:focus {
   outline: none;
   border: 1px solid blue;
+  box-shadow: 1px 1px 5px 1px rgb(0 0 0 / 20%);
 }
