@@ -19,35 +19,49 @@ body {
     "Segoe UI Symbol";
   margin: 0;
   height: 100vh;
+}
+
+body,
+body > div,
+.left div,
+.form-controls,
+.top,
+.mid,
+.btm {
   display: flex;
 }
 
 body > div {
   height: 100%;
-  flex: 2;
+}
+
+.left,
+.right,
+.form-controls {
+  flex-direction: column;
 }
 
 .left {
+  flex: 1;
   background-image: url('../assets/img/green-leaf.jpg');
   background-size: cover;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
   color: white;
   
 }
 
+.right {
+  flex: 2;
+}
+
 .left div {
-  display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgb(0 0 0 / 0.5);
   font-family: 'Norse', sans-serif;
   font-size: 4rem;
   padding: 8px 0;
-  position: relative;
-  top: 150px;
+  margin-top: 150px;
 }
 
 .left p {
@@ -55,6 +69,98 @@ body > div {
   font-size: 9px;
 }
 
-.left p, a {
+.left p,
+.form-controls {
+  font-size: 9px;
+}
+
+.left p,
+.attr {
   color:rgb(255 255 255 / 0.8)
+}
+
+.header,
+.main p {
+  font-weight: bold;
+  opacity: 0.9;
+}
+
+.top,
+.mid,
+.btm {
+  gap: 50px;
+}
+
+.form-controls {
+  text-transform: uppercase;
+}
+
+.top ~ div {
+  margin-top: 12px;
+}
+
+.header,
+.main,
+.footer {
+  padding-left: 32px;
+  padding-right: 100px;
+}
+
+.header {
+  padding-top: 110px;
+}
+
+.main {
+  flex: 1;
+  padding-bottom: 24px;
+}
+
+.footer {
+  padding-top: 24px;
+  padding-bottom: 86px;
+}
+
+.header,
+.footer {
+  flex: 2;
+  background-color: #596d4810;
+}
+
+button {
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 10px;
+  background-color: #596D48;
+  padding: 8px 40px;
+  color: white;
+  border: 1px solid #596D48;
+  border-radius: 6px;
+}
+
+.main,
+button:active,
+input:focus {
+  box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
+}
+
+.footer p {
+  font-size: 12px;
+}
+
+.footer a {
+  color: #596D48;
+}
+
+input {
+  border: 1px solid #E5E7EB;
+  border-radius: 3px;
+}
+
+input[type="password"]:user-invalid {
+  border-color: red;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid blue;
 }
