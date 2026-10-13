@@ -66,7 +66,6 @@ body > div {
 
 .left p {
   text-align: center;
-  font-size: 9px;
 }
 
 .left p,
@@ -82,7 +81,7 @@ body > div {
 .header,
 .main p {
   font-weight: bold;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 .top,
